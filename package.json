@@ -1,6 +1,6 @@
 {
   "name": "encode-url-search",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "encode search query",
   "main": "encodeURLsearch",
   "scripts": {

@@ -8,7 +8,7 @@ function encodeURLsearch (obj, prevKey, sep) {
     const gkey = !prevKey ? key : (prevKey + '[' + key + ']')
     if (Array.isArray(val)) val.forEach(function (subval) { set(gkey, subval) })
     else if (typeof val !== 'object') set(gkey, val)
-    else result += stringify(val, gkey, sep)
+    else result += encodeURLsearch(val, gkey, sep)
   }
   function set(gkey, val) {
     result += sep + gkey + '=' + val
