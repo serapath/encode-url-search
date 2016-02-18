@@ -1,0 +1,28 @@
+{
+  "name": "encode-url-search",
+  "version": "1.0.0",
+  "description": "encode search query",
+  "main": "encodeURLsearch",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/serapath/encode-url-search.git"
+  },
+  "keywords": [
+    "encode",
+    "query",
+    "stringify",
+    "search",
+    "location",
+    "browser",
+    "url"
+  ],
+  "author": "serapath <dev@serapath.de> (http://www.github.com/serapath)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/serapath/encode-url-search/issues"
+  },
+  "homepage": "https://github.com/serapath/encode-url-search#readme"
+}
