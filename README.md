@@ -15,3 +15,5 @@ encode search qery
   console.log(search)
   // => "?emse.kremse=bemse"
 ```
+## roadmap
+* add decoding (=parsing) functionality
