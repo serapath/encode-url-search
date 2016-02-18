@@ -1,0 +1,2 @@
+# encodeURLsearch
+encode search query
