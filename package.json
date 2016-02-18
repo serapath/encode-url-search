@@ -1,14 +1,14 @@
 {
-  "name": "qeri",
+  "name": "qery",
   "version": "2.0.0",
   "description": "encode search query",
-  "main": "qeri",
+  "main": "qery",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/serapath/qeri.git"
+    "url": "git+https://github.com/serapath/qery.git"
   },
   "keywords": [
     "encode",
@@ -22,7 +22,7 @@
   "author": "serapath <dev@serapath.de> (http://www.github.com/serapath)",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/serapath/qeri/issues"
+    "url": "https://github.com/serapath/qery/issues"
   },
-  "homepage": "https://github.com/serapath/qeri#readme"
+  "homepage": "https://github.com/serapath/qery#readme"
 }
