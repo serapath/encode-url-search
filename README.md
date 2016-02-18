@@ -1,17 +1,17 @@
-# encodeURLsearch
-encode search query
+# qery
+encode search qery
 
 ## example
 
 ```js
-  var encodeURLsearch = require('encode-url-search')
-  var search = encodeURLsearch({ emse: 'kremse' })
+  var qery = require('qery')
+  var search = qery({ emse: 'kremse' })
   console.log(search)
   // => "?emse=kremse"
-  search = encodeURLsearch({ emse: ['kremse', 'bemse'] })
+  search = qery({ emse: ['kremse', 'bemse'] })
   console.log(search)
   // => "?emse=kremse&emse=bemse"
-  search = encodeURLsearch({ emse: { kremse: 'bemse' } })
+  search = qery({ emse: { kremse: 'bemse' } })
   console.log(search)
-  // => "?emse[kremse]=bemse"
+  // => "?emse.kremse=bemse"
 ```

@@ -1,14 +1,15 @@
 'use strict'
-module.exports = encodeURLsearch
+module.exports = qery
 
-function encodeURLsearch (obj, prevKey, sep) {
+function qery (obj, prevKey, sep) {
   var result = '', sep = sep || '?'
   for (var key in obj) {
-    const val = obj[key]
-    const gkey = !prevKey ? key : (prevKey + '[' + key + ']')
+    var val = obj[key]
+    if (val===undefined) continue
+    var gkey = !prevKey ? key : (prevKey + '.' + key)
     if (Array.isArray(val)) val.forEach(function (subval) { set(gkey, subval) })
     else if (typeof val !== 'object') set(gkey, val)
-    else result += encodeURLsearch(val, gkey, sep)
+    else result += qery(val, gkey, sep)
   }
   function set(gkey, val) {
     result += sep + gkey + '=' + val
